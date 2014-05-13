@@ -1,0 +1,204 @@
+body {
+  background: #fcfcfc;
+}
+.cargando{
+	position: fixed;
+	width:7%;
+	font-weight:bold;
+	height:15px;
+	clear:both;
+	margin-top:0px;
+	text-align:center;
+	z-index:9999;
+  margin-left: 44%;
+	display:none;
+}
+.cargando .msg {
+	width:80px;
+	margin:0 auto;
+}
+.modulo {
+	min-height:460px;
+}
+.footer {
+	height:60px;
+	padding: 20px;
+	margin-top: 70px;
+	border-top: 1px solid #E5E5E5;
+	background-color: whiteSmoke;
+}
+.footer p {
+	margin-bottom: 0;
+	color: #555;
+}
+table.table-nowrap {
+	table-layout:fixed;
+}
+.table-nowrap td.corta {
+	overflow:hidden; 
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+/* NOTIFICACIONES */
+.notifications {
+  position: fixed;
+	min-width:270px;
+	z-index:99999;
+}
+
+/* Positioning */ 
+.notifications.top-right {
+  right: 10px;
+  top: 50px;
+}
+
+.notifications.top-left {
+  left: 10px;
+  top: 25px;
+}
+
+.notifications.bottom-left {
+  left: 10px;
+  bottom: 25px;
+}
+
+.notifications.bottom-right {
+  right: 10px;
+  bottom: 25px;
+}
+
+/* Notification Element */
+.notifications > div {
+  position: relative;
+  z-index: -9999999;
+  margin: 5px 0px;
+}
+
+
+
+#feedback { 
+  height: 104px; 
+  width: 75px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback a { 
+  display: block; 
+  background: #f00; 
+  height: 15px; 
+  width: 40px; 
+  padding: 9px;
+  color: #fff; 
+  text-decoration: none;
+}
+
+
+/* ## Notification Keyframe Animations
+ *
+ * ## Usage
+ *
+ * ```css
+ *  -webkit-animation: notification .75s linear;
+ *  -moz-animation: notification .75s linear;
+ *  -ms-animation: notification .75s linear;
+ *  -o-animation: notification .75s linear;
+ *  animation: notification .75s linear;
+ * ```
+ */
+
+@-webkit-keyframes notification {
+  0% { -webkit-transform: rotateY(-90deg); opacity: 0; }
+  70% { -webkit-transform: rotateY(20deg); opacity: .8; }
+  90% { -webkit-transform: rotateY(-10deg); opacity: 1; }
+  100% { -webkit-transform: rotateY(-0deg); opacity: 1; }
+}
+
+@-moz-keyframes notification {
+  0% { -moz-transform: rotateY(-90deg); opacity: 0; }
+  70% { -moz-transform: rotateY(20deg); opacity: .8; }
+  90% { -moz-transform: rotateY(-10deg); opacity: 1; }
+  100% { -moz-transform: rotateY(-0deg); opacity: 1; }
+}
+
+@-ms-keyframes notification {
+  0% { -ms-transform: rotateY(-90deg); opacity: 0; }
+  70% { -ms-transform: rotateY(20deg); opacity: .8; }
+  90% { -ms-transform: rotateY(-10deg); opacity: 1; }
+  100% { -ms-transform: rotateY(-0deg); opacity: 1; }
+}
+
+@-o-keyframes notification {
+  0% { -o-transform: rotateY(-90deg); opacity: 0; }
+  70% { -o-transform: rotateY(20deg); opacity: .8; }
+  90% { -o-transform: rotateY(-10deg); opacity: 1; }
+  100% { -o-transform: rotateY(-0deg); opacity: 1; }
+}
+
+keyframes notification {
+  0% { transform: rotateY(-90deg); opacity: 0; }
+  70% { transform: rotateY(20deg); opacity: .8; }
+  90% { transform: rotateY(-10deg); opacity: 1; }
+  100% { transform: rotateY(-0deg); opacity: 1; }
+}
+
+.notifications > div {
+  -webkit-animation: notification .75s linear;
+  -moz-animation: notification .75s linear;
+  -ms-animation: notification .75s linear;
+  -o-animation: notification .75s linear;
+  animation: notification .75s linear;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+.label-pink {
+    background-color: #d11564;
+}

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|js|css|img|fonts|robots\.txt)
+RewriteRule ^(.*)$ /labs-bootstrap/index.php/$1 [L]
